@@ -111,16 +111,16 @@ MemoryTableData& MemoryTableData::operator=(
 
 
 void MemoryTableData::initialiseValues(
-         std::vector<boost::any>& values)
+         std::vector<std::any>& values)
 {
   assert(values.empty());
-  values.push_back(std::vector<boost::any>());
+  values.push_back(std::vector<std::any>());
 }
 
 
 
 void MemoryTableData::initialiseValues(
-         std::vector<boost::any>& values,
+         std::vector<std::any>& values,
          DataSpace space)
 {
   // If space has no dimensions any more, this is the level where the actual

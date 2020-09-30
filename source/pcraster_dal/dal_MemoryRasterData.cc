@@ -81,7 +81,7 @@ MemoryRasterData::MemoryRasterData(
 
 
 MemoryRasterData::MemoryRasterData(
-         std::vector<boost::any>& values,
+         std::vector<std::any>& values,
          DataSpace const& dataSpace,
          TypeId typeId,
          size_t nrRows,
@@ -204,7 +204,7 @@ void MemoryRasterData::updateExtremes()
 
 
 void* MemoryRasterData::cells(
-         std::vector<boost::any> values)
+         std::vector<std::any> values)
 {
   assert(values.size() == 1);
 
